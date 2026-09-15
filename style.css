@@ -869,12 +869,12 @@ img {
     }
 #mainWorld,
 .inner-page {
-    background-size: 100% 100%;
-    background-position: center center;
+    background-size: 100% auto;
+    background-position: center top;
     background-repeat: no-repeat;
     background-attachment: scroll;
-  }
-
+}
+   
 }
 
 
