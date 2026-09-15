@@ -994,13 +994,13 @@ img {
 
     .gateway-card > img {
 
-        width: calc(100% - 22px);
+        width: 82%;
 
-        height: 235px;
+        height: 175px;
 
-        margin-top: 11px;
+        margin-top: 11px auto 0;
 
-        padding: 6px;
+        padding: 5px;
     }
 
     .gateway-content {
