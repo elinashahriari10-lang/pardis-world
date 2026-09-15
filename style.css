@@ -512,6 +512,10 @@ center top / 100% auto fixed no-repeat;
 }
 
 .photo-card {
+    max-width: 320px;
+    margin: 0 auto;
+}
+.photo-card {
 
     overflow: hidden;
 
