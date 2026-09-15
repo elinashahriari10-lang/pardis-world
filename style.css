@@ -970,11 +970,17 @@ img {
 
     .gateway-card {
 
-        width: 100%;
+    width: 100%;
 
-        min-height: auto;
+    max-width: 92%;
 
-        border-radius: 25px;
+    min-height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 25px;
+}
     }
 
     .gateway-card > img {
@@ -1186,7 +1192,7 @@ img {
     }
 
     .gateway-card > img {
-        height: 210px;
+        height: 190px;
     }
 
 }
