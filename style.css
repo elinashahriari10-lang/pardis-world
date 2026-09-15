@@ -238,8 +238,8 @@ img {
             rgba(38,12,65,0.35),
             rgba(75,25,100,0.45)
         ),
-        url("images/dreamland-world.jpg")
-        center / cover fixed no-repeat;
+       url("images/dreamland-world.jpg")
+center top / 100% auto fixed no-repeat; 
 
     position: relative;
 }
@@ -894,7 +894,7 @@ img {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-}
+  }
    
 }
 
