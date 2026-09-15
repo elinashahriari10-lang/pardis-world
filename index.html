@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pardis World ✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- WELCOME -->
+    <section id="welcomeScreen">
+        <div class="welcome-content">
+            <div class="small-title">WELCOME TO</div>
+            <h1>
+                PARDIS<br>
+                WORLD
+            </h1>
+            <p>
+                A little surprise, made with lots of love ♡
+            </p>
+            <button id="enterButton" class="magic-button">
+                Enter the Magic ✨
+            </button>
+            <button id="leaveButton" class="leave-button">
+                Leave the Magic ✦
+            </button>
+        </div>
+    </section>
+    <!-- DREAMLAND -->
+    <main id="mainWorld" class="hidden">
+        <div class="world-title">
+            <p>A magical place made for you</p>
+            <h2>Pardis's Dreamland</h2>
+            <p>Choose a little corner of this magical world ✨</p>
+        </div>
+        <div class="gateway-grid">
+            <!-- FRIENDSHIP -->
+            <article class="gateway-card">
+                <img src="images/friendship-pony.jpg" alt="Friendship Pony">
+                <div class="gateway-content">
+                    <h3>Friendship Garden</h3>
+                    <p>
+                        A little garden for memories and friendship 🌸
+                    </p>
+                    <button id="friendshipButton" class="magic-button">
+                        Enter Garden ✨
+                    </button>
+                </div>
+            </article>
+            <!-- LETTER -->
+            <article class="gateway-card">
+                <img src="images/letters-pony.jpg" alt="Secret Letters Pony">
+                <div class="gateway-content">
+                    <h3>Secret Letters</h3>
+                    <p>
+                        A little letter waiting just for you 💌
+                    </p>
+                    <button id="letterButton" class="magic-button">
+                        Open Letters 💌
+                    </button>
+                </div>
+            </article>
+            <!-- MUSIC -->
+            <article class="gateway-card">
+                <img src="images/music-pony.jpg" alt="Music Pony">
+                <div class="gateway-content">
+                    <h3>Magic Music Room</h3>
+                    <p>
+                        Press play, and let the magic begin 🎵
+                    </p>
+                    <button id="musicButton" class="magic-button">
+                        Enter Music Room 🎶
+                    </button>
+                </div>
+            </article>
+            <!-- SURPRISE -->
+            <article class="gateway-card">
+                <img src="images/surprise-pony.jpg" alt="Surprise Pony">
+                <div class="gateway-content">
+                    <h3>Surprise Room</h3>
+                    <p>
+                        One last little surprise is waiting 🎁
+                    </p>
+                    <button id="surpriseButton" class="magic-button">
+                        Find the Surprise ✨
+                    </button>
+                </div>
+            </article>
+        </div>
+        <button id="backToWelcome" class="dreamland-back">
+            ← Back to Welcome
+        </button>
+    </main>
+    <!-- FRIENDSHIP GARDEN -->
+    <section id="friendshipGarden" class="inner-page hidden">
+        <div class="inner-content">
+            <div class="inner-title">
+                <h2>Friendship Garden 🌸</h2>
+            </div>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="images/pardis.jpg" alt="Pardis">
+                </div>
+                <div class="photo-card">
+                    <img src="images/elina.jpg" alt="Elina">
+                </div>
+            </div>
+            <button id="backFromGarden" class="back-button">
+                ← Back to Dreamland
+            </button>
+        </div>
+    </section>
+    <!-- SECRET LETTER -->
+    <section id="secretLetter" class="inner-page hidden">
+        <div class="inner-content">
+            <div class="inner-title">
+                <h2>Secret Letters 💌</h2>
+            </div>
+            <div class="letter-box">
+                <h3>For Pardis 🤍</h3>
+                <p>پردیس جان 🤍</p>
+                <p>
+                    امیدوارم توی سال جدید زندگیت، کلی اتفاق قشنگ منتظرت باشه؛
+                    از اون اتفاقایی که یهویی میان و آدم رو خوشحال می‌کنن.
+                </p>
+                <p>
+                    امیدوارم همیشه آدم‌هایی کنارت باشن که باعث بشن خودِ واقعی‌ت باشی،
+                    زیاد بخندی، رویاهای عجیب داشته باشی و ازشون خجالت نکشی. 🌸
+                </p>
+                <p>
+                    تولدت کلی مبارک، پردیس عزیزم! 🎂💗
+                    امیدوارم امسال یکی از قشنگ‌ترین سال‌های زندگیت باشه
+                    و آرزوها و رویا‌هات به خاطره‌های قشنگ تبدیل بشن. :)
+                </p>
+                <p>
+                    از طرف بهترین دوست ۷ ساله‌ات،
+                    <br>
+                    الینا 🙂‍↔️💋
+                </p>
+                <p>
+                    Date: 1405/8/17
+                </p>
+            </div>
+            <button id="backFromLetter" class="back-button">
+                ← Back to Dreamland
+            </button>
+        </div>
+    </section>
+    <!-- MUSIC ROOM -->
+    <section id="musicRoom" class="inner-page hidden">
+        <div class="inner-content">
+            <div class="inner-title">
+                <h2>Magic Music Room 🎵</h2>
+            </div>
+            <div class="music-player">
+                <img src="images/music-pony.jpg" alt="Pardis Birthday Music">
+                <div class="music-info">
+                    <h3>Pardis's Birthday 🎂</h3>
+                    <p>
+                        Press play, and let the magic begin.
+                    </p>
+                    <button id="playMusic" class="music-button">
+                        ▶ Play
+                    </button>
+                    <audio
+                        id="magicAudio"
+                        src="music/pardis-birthday.mp3">
+                    </audio>
+                </div>
+            </div>
+            <button id="backFromMusic" class="back-button">
+                ← Back to Dreamland
+            </button>
+        </div>
+    </section>
+    <!-- SURPRISE ROOM -->
+    <section id="surpriseRoom" class="inner-page hidden">
+        <div class="inner-content">
+            <div class="inner-title">
+                <h2>Surprise Room 🎁</h2>
+            </div>
+            <div class="surprise-box">
+                <div class="gift" id="giftBox">
+                    🎁
+                </div>
+                <h3>
+                    One Last Surprise ✨
+                </h3>
+                <p>
+                    Click the gift to open it 💗
+                </p>
+                <div class="rainbow-line"></div>
+                <div id="surpriseMessage" class="surprise-message hidden">
+                    <h4>
+                        A Little Magic for You ✨
+                    </h4>
+                    <p>
+                        You found the last little secret hidden in Pardis World.
+                    </p>
+                    <p>
+                        I hope this new year brings you beautiful surprises,
+                        unforgettable memories, endless laughter,
+                        and dreams that feel a little closer every day.
+                    </p>
+                    <p>
+                        Keep being the wonderful, chaotic, magical you. 💗
+                    </p>
+                    <p>
+                        <strong>
+                            Happy Birthday, Pardis! 🎂🦄
+                        </strong>
+                    </p>
+                    <p>
+                        <em>
+                            With love,<br>
+                            Elina ♡
+                        </em>
+                    </p>
+                </div>
+            </div>
+            <button id="backFromSurprise" class="back-button">
+                ← Back to Dreamland
+            </button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
