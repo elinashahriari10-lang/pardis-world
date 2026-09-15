@@ -531,13 +531,34 @@ img {
 .photo-card img {
 
     width: 100%;
-    height: 390px;
+    height: 300px;
 
     object-fit: cover;
 
     transition: transform 0.4s ease;
 }
 
+.photo-name {
+
+    padding: 14px 10px 17px;
+
+    text-align: center;
+
+    font-family: "Georgia", serif;
+
+    font-size: 21px;
+
+    font-style: italic;
+
+    letter-spacing: 2px;
+
+    color: white;
+
+    text-shadow:
+        0 0 6px rgba(255,255,255,0.8),
+        0 0 15px rgba(220,130,255,0.7);
+
+}
 .photo-card:hover img {
     transform: scale(1.035);
 }
