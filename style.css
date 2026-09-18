@@ -233,8 +233,8 @@ img {
             rgba(38,12,65,0.35),
             rgba(75,25,100,0.45)
         ),
-       url("images/dreamland-world.jpg")
-center top / 100% auto fixed no-repeat; 
+        url("images/dreamland-world.jpg")
+        center top / 100% auto fixed no-repeat;
 
     position: relative;
 }
@@ -337,8 +337,6 @@ center top / 100% auto fixed no-repeat;
         inset 0 0 35px rgba(255,255,255,0.08);
 }
 
-/* magical image frame */
-
 .gateway-card > img {
 
     width: calc(100% - 28px);
@@ -416,8 +414,6 @@ center top / 100% auto fixed no-repeat;
     color: rgba(255,255,255,0.88);
 }
 
-/* ---------- DREAMLAND BACK ---------- */
-
 .dreamland-back {
 
     display: block;
@@ -462,7 +458,7 @@ center top / 100% auto fixed no-repeat;
 
 .inner-title h2 {
 
-    margin-bott om: 30px;
+    margin-bottom: 30px;
 
     font-size: clamp(30px, 6vw, 55px);
 
@@ -489,56 +485,175 @@ center top / 100% auto fixed no-repeat;
         center / cover fixed no-repeat;
 }
 
-.photo-grid {
+/* ---------- PHOTO GRID ---------- */
+
+#friendshipGarden .photo-grid {
 
     display: grid;
 
     grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+        repeat(2, minmax(0, 250px));
 
-    gap: 24px;
+    justify-content: center;
 
-    margin-bottom: 30px;
+    gap: 30px;
+
+    margin-bottom: 32px;
 }
 
-.photo-card {
+/* ---------- MAGICAL PHOTO CARD ---------- */
+
+#friendshipGarden .photo-card {
+
+    position: relative;
+
+    width: 250px;
     max-width: 250px;
-    margin: 0 auto;
-}
 
-.photo-card {
+    padding: 7px;
 
     overflow: hidden;
+
+    border-radius: 30px;
+
+    border:
+        1px solid rgba(255,255,255,0.55);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.30),
+            rgba(220,150,255,0.18),
+            rgba(120,70,180,0.20)
+        );
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 18px 45px rgba(35,10,60,0.32),
+        0 0 18px rgba(220,150,255,0.20),
+        inset 0 0 20px rgba(255,255,255,0.12);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+#friendshipGarden .photo-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 30px;
+
+    background:
+        radial-gradient(
+            circle at 20% 15%,
+            rgba(255,255,255,0.65),
+            transparent 18%
+        ),
+        radial-gradient(
+            circle at 85% 85%,
+            rgba(220,130,255,0.45),
+            transparent 35%
+        );
+
+    pointer-events: none;
+
+    z-index: 2;
+
+    opacity: 0.75;
+}
+
+#friendshipGarden .photo-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 5px;
 
     border-radius: 25px;
 
     border:
-        1px solid rgba(255,255,255,0.38);
-
-    background: rgba(255,255,255,0.12);
-
-    backdrop-filter: blur(10px);
+        1px solid rgba(255,255,255,0.25);
 
     box-shadow:
-        0 20px 45px rgba(40,10,60,0.3);
+        inset 0 0 18px rgba(255,255,255,0.12),
+        0 0 15px rgba(230,150,255,0.12);
+
+    pointer-events: none;
+
+    z-index: 3;
 }
 
-.photo-card img {
+/* ---------- PHOTO ---------- */
+
+#friendshipGarden .photo-card img {
+
+    display: block;
+
     width: 100%;
+
     height: 235px;
+
     object-fit: cover;
-    transition: transform 0.4s ease;
+
+    object-position: center;
+
+    border-radius: 24px;
+
+    position: relative;
+
+    z-index: 1;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
 }
 
-.photo-name {
+/* ---------- HOVER MAGIC ---------- */
 
-    padding: 14px 10px 17px;
+#friendshipGarden .photo-card:hover {
+
+    transform:
+        translateY(-8px)
+        rotate(-1deg);
+
+    box-shadow:
+        0 28px 60px rgba(35,10,60,0.38),
+        0 0 28px rgba(225,145,255,0.45),
+        0 0 55px rgba(190,100,255,0.20),
+        inset 0 0 25px rgba(255,255,255,0.14);
+}
+
+#friendshipGarden .photo-card:hover img {
+
+    transform: scale(1.045);
+
+    filter:
+        brightness(1.05)
+        saturate(1.08);
+}
+
+/* ---------- PHOTO NAMES ---------- */
+
+#friendshipGarden .photo-name {
+
+    padding:
+        13px 8px 8px;
 
     text-align: center;
 
-    font-family: "Georgia", serif;
+    font-family:
+        "Georgia",
+        serif;
 
-    font-size: 21px;
+    font-size: 20px;
 
     font-style: italic;
 
@@ -547,13 +662,8 @@ center top / 100% auto fixed no-repeat;
     color: white;
 
     text-shadow:
-        0 0 6px rgba(255,255,255,0.8),
-        0 0 15px rgba(220,130,255,0.7);
-
-}
-
-.photo-card:hover img {
-    transform: scale(1.035);
+        0 0 6px rgba(255,255,255,0.85),
+        0 0 15px rgba(220,130,255,0.75);
 }
 
 /* =====================================================
@@ -1002,7 +1112,7 @@ center top / 100% auto fixed no-repeat;
 
         height: 175px;
 
-        margin-top: 11px auto 0;
+        margin: 11px auto 0;
 
         padding: 5px;
     }
@@ -1064,52 +1174,56 @@ center top / 100% auto fixed no-repeat;
 
     /* FRIENDSHIP */
 
-    .photo-grid {
+    #friendshipGarden .photo-grid {
 
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
 
         gap: 14px;
 
         margin-bottom: 22px;
     }
 
-    .photo-card {
+    #friendshipGarden .photo-card {
 
         width: 100%;
 
-        overflow: hidden;
+        max-width: 100%;
+
+        padding: 5px;
 
         border-radius: 22px;
-
-        border: 1px solid rgba(255,255,255,0.35);
-
-        background: rgba(255,255,255,0.12);
-
-        backdrop-filter: blur(10px);
-
-        box-shadow:
-            0 12px 30px rgba(40,10,60,0.25);
     }
 
-    .photo-card img {
+    #friendshipGarden .photo-card::before {
+
+        border-radius: 22px;
+    }
+
+    #friendshipGarden .photo-card::after {
+
+        inset: 4px;
+
+        border-radius: 18px;
+    }
+
+    #friendshipGarden .photo-card img {
 
         width: 100%;
 
-        height: 170px;
-
-        object-fit: cover;
-
-        display: block;
-    }
-
-    .photo-card img {
-
-        width: 100%;
         height: 190px;
 
-        aspect-ratio: auto;
+        border-radius: 18px;
+    }
 
-        object-fit: cover;
+    #friendshipGarden .photo-name {
+
+        font-size: 17px;
+
+        letter-spacing: 1px;
+
+        padding:
+            10px 5px 6px;
     }
 
     /* LETTER */
@@ -1208,31 +1322,6 @@ center top / 100% auto fixed no-repeat;
 
 }
 
-/* =====================================================
-   VERY SMALL PHONES
-===================================================== */
-
-@media (max-width: 380px) {
-
-    .welcome-content h1 {
-        font-size: 42px;
-        letter-spacing: 3px;
-    }
-
-    .small-title {
-        font-size: 10px;
-        letter-spacing: 3px;
-    }
-
-    .world-title h2 {
-        font-size: 29px;
-    }
-
-    .gateway-card > img {
-        height: 190px;
-    }
-
-}
 /* =====================================================
    VERY SMALL PHONES
 ===================================================== */
