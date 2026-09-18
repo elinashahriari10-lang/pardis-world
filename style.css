@@ -1258,21 +1258,3 @@ center top / 100% auto fixed no-repeat;
     }
 
 }
-
-/* ---------- FRIENDSHIP SIZE TEST ---------- */
-
-@media (min-width: 651px) {
-
-    #friendshipGarden .photo-card {
-        width: 150px !important;
-        max-width: 150px !important;
-        background: red !important;
-    }
-
-    #friendshipGarden .photo-card img {
-        width: 150px !important;
-        height: 150px !important;
-        max-width: 150px !important;
-    }
-
-}
