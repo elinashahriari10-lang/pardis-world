@@ -1233,3 +1233,51 @@ center top / 100% auto fixed no-repeat;
     }
 
 }
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .welcome-content h1 {
+        font-size: 42px;
+        letter-spacing: 3px;
+    }
+
+    .small-title {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .world-title h2 {
+        font-size: 29px;
+    }
+
+    .gateway-card > img {
+        height: 190px;
+    }
+
+}
+
+/* ---------- FRIENDSHIP DESKTOP SIZE FIX ---------- */
+
+@media (min-width: 651px) {
+
+    #friendshipGarden .photo-grid {
+        grid-template-columns: repeat(2, 250px);
+        justify-content: center;
+    }
+
+    #friendshipGarden .photo-card {
+        width: 250px;
+        max-width: 250px;
+    }
+
+    #friendshipGarden .photo-card img {
+        width: 250px;
+        height: 235px;
+        max-width: 250px;
+        object-fit: cover;
+    }
+
+}
