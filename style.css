@@ -889,15 +889,14 @@ center top / 100% auto fixed no-repeat;
         width: 100%;
         overflow-x: hidden;
     }
-#mainWorld,
-.inner-page {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-  }
 
-
+    #mainWorld,
+    .inner-page {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
 
     /* WELCOME */
 
