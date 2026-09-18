@@ -34,8 +34,6 @@ img {
     display: block;
 }
 
-/* ---------- HIDDEN ---------- */
-
 .hidden {
     display: none !important;
 }
@@ -159,7 +157,6 @@ img {
 .dreamland-back,
 .back-button,
 .music-button {
-
     min-height: 44px;
 
     padding: 12px 22px;
@@ -193,7 +190,6 @@ img {
 .dreamland-back:hover,
 .back-button:hover,
 .music-button:hover {
-
     transform: translateY(-3px);
 
     background:
@@ -220,7 +216,6 @@ img {
 ===================================================== */
 
 #mainWorld {
-
     min-height: 100vh;
 
     padding:
@@ -279,9 +274,7 @@ img {
 ===================================================== */
 
 .gateway-grid {
-
     width: min(1280px, 100%);
-
     margin: 0 auto;
 
     display: grid;
@@ -293,7 +286,6 @@ img {
 }
 
 .gateway-card {
-
     position: relative;
 
     min-width: 0;
@@ -328,7 +320,6 @@ img {
 }
 
 .gateway-card:hover {
-
     transform: translateY(-8px);
 
     box-shadow:
@@ -338,7 +329,6 @@ img {
 }
 
 .gateway-card > img {
-
     width: calc(100% - 28px);
     height: 225px;
 
@@ -374,7 +364,6 @@ img {
 }
 
 .gateway-card:hover > img {
-
     transform: translateY(-4px) scale(1.02);
 
     filter:
@@ -383,7 +372,6 @@ img {
 }
 
 .gateway-content {
-
     padding:
         20px 20px 24px;
 
@@ -391,7 +379,6 @@ img {
 }
 
 .gateway-content h3 {
-
     font-size: clamp(19px, 2vw, 24px);
 
     margin-bottom: 10px;
@@ -403,7 +390,6 @@ img {
 }
 
 .gateway-content p {
-
     min-height: 42px;
 
     margin-bottom: 17px;
@@ -415,9 +401,7 @@ img {
 }
 
 .dreamland-back {
-
     display: block;
-
     margin: 34px auto 0;
 
     background: rgba(50,20,80,0.24);
@@ -428,7 +412,6 @@ img {
 ===================================================== */
 
 .inner-page {
-
     min-height: 100vh;
 
     padding:
@@ -448,7 +431,6 @@ img {
 }
 
 .inner-content {
-
     width: min(950px, 100%);
 
     padding: 28px 18px;
@@ -457,7 +439,6 @@ img {
 }
 
 .inner-title h2 {
-
     margin-bottom: 30px;
 
     font-size: clamp(30px, 6vw, 55px);
@@ -471,11 +452,10 @@ img {
 }
 
 /* =====================================================
-   FRIENDSHIP
+   FRIENDSHIP GARDEN
 ===================================================== */
 
 #friendshipGarden {
-
     background:
         linear-gradient(
             rgba(80,25,85,0.35),
@@ -488,182 +468,160 @@ img {
 /* ---------- PHOTO GRID ---------- */
 
 #friendshipGarden .photo-grid {
-
     display: grid;
 
     grid-template-columns:
-        repeat(2, minmax(0, 250px));
+        repeat(2, 250px);
 
     justify-content: center;
 
-    gap: 30px;
+    gap: 32px;
 
     margin-bottom: 32px;
 }
 
-/* ---------- MAGICAL PHOTO CARD ---------- */
+/* ---------- MAGICAL FRAME ---------- */
 
 #friendshipGarden .photo-card {
-
     position: relative;
 
     width: 250px;
+    height: 300px;
+
+    min-width: 250px;
     max-width: 250px;
 
-    padding: 7px;
+    padding: 8px;
 
     overflow: hidden;
 
-    border-radius: 30px;
+    border-radius: 32px;
 
     border:
-        1px solid rgba(255,255,255,0.55);
+        1px solid rgba(255,255,255,0.70);
 
     background:
         linear-gradient(
             145deg,
-            rgba(255,255,255,0.30),
-            rgba(220,150,255,0.18),
-            rgba(120,70,180,0.20)
+            rgba(255,255,255,0.32),
+            rgba(238,175,255,0.20),
+            rgba(128,72,190,0.25)
         );
 
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 
     box-shadow:
-        0 18px 45px rgba(35,10,60,0.32),
-        0 0 18px rgba(220,150,255,0.20),
-        inset 0 0 20px rgba(255,255,255,0.12);
+        0 20px 45px rgba(35,10,60,0.35),
+        0 0 18px rgba(255,190,250,0.28),
+        0 0 38px rgba(190,100,255,0.18),
+        inset 0 0 25px rgba(255,255,255,0.16);
 
     transition:
-        transform 0.4s ease,
-        box-shadow 0.4s ease;
+        transform 0.45s ease,
+        box-shadow 0.45s ease;
 }
+
+/* ---------- OUTER MAGICAL GLOW ---------- */
 
 #friendshipGarden .photo-card::before {
-
     content: "";
 
     position: absolute;
 
-    inset: 0;
+    inset: -2px;
 
-    border-radius: 30px;
+    border-radius: 34px;
 
     background:
-        radial-gradient(
-            circle at 20% 15%,
-            rgba(255,255,255,0.65),
-            transparent 18%
-        ),
-        radial-gradient(
-            circle at 85% 85%,
-            rgba(220,130,255,0.45),
-            transparent 35%
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.85),
+            rgba(235,150,255,0.65),
+            rgba(170,100,255,0.45),
+            rgba(255,205,245,0.70)
         );
 
+    opacity: 0.35;
+
+    filter: blur(7px);
+
+    z-index: 0;
+
     pointer-events: none;
-
-    z-index: 2;
-
-    opacity: 0.75;
 }
 
-#friendshipGarden .photo-card::after {
+/* ---------- INNER LIGHT ---------- */
 
+#friendshipGarden .photo-card::after {
     content: "";
 
     position: absolute;
 
-    inset: 5px;
+    inset: 7px;
 
-    border-radius: 25px;
+    border-radius: 27px;
 
     border:
-        1px solid rgba(255,255,255,0.25);
+        1px solid rgba(255,255,255,0.35);
 
     box-shadow:
-        inset 0 0 18px rgba(255,255,255,0.12),
-        0 0 15px rgba(230,150,255,0.12);
-
-    pointer-events: none;
+        inset 0 0 22px rgba(255,255,255,0.18),
+        inset 0 0 45px rgba(210,120,255,0.10);
 
     z-index: 3;
+
+    pointer-events: none;
 }
 
 /* ---------- PHOTO ---------- */
 
 #friendshipGarden .photo-card img {
+    position: relative;
+
+    z-index: 1;
 
     display: block;
 
     width: 100%;
-
-    height: 235px;
+    height: 100%;
 
     object-fit: cover;
-
     object-position: center;
 
-    border-radius: 24px;
-
-    position: relative;
-
-    z-index: 1;
+    border-radius: 25px;
 
     transition:
         transform 0.5s ease,
         filter 0.5s ease;
 }
 
-/* ---------- HOVER MAGIC ---------- */
+/* ---------- MAGICAL SPARKLE ---------- */
+
+#friendshipGarden .photo-card:hover::before {
+    opacity: 0.75;
+
+    filter: blur(10px);
+}
 
 #friendshipGarden .photo-card:hover {
-
     transform:
-        translateY(-8px)
+        translateY(-9px)
         rotate(-1deg);
 
     box-shadow:
-        0 28px 60px rgba(35,10,60,0.38),
-        0 0 28px rgba(225,145,255,0.45),
-        0 0 55px rgba(190,100,255,0.20),
-        inset 0 0 25px rgba(255,255,255,0.14);
+        0 30px 65px rgba(35,10,60,0.40),
+        0 0 25px rgba(255,190,250,0.55),
+        0 0 55px rgba(190,100,255,0.38),
+        inset 0 0 30px rgba(255,255,255,0.20);
 }
 
 #friendshipGarden .photo-card:hover img {
-
     transform: scale(1.045);
 
     filter:
-        brightness(1.05)
-        saturate(1.08);
-}
-
-/* ---------- PHOTO NAMES ---------- */
-
-#friendshipGarden .photo-name {
-
-    padding:
-        13px 8px 8px;
-
-    text-align: center;
-
-    font-family:
-        "Georgia",
-        serif;
-
-    font-size: 20px;
-
-    font-style: italic;
-
-    letter-spacing: 2px;
-
-    color: white;
-
-    text-shadow:
-        0 0 6px rgba(255,255,255,0.85),
-        0 0 15px rgba(220,130,255,0.75);
+        brightness(1.06)
+        saturate(1.10);
 }
 
 /* =====================================================
@@ -671,7 +629,6 @@ img {
 ===================================================== */
 
 #secretLetter {
-
     background:
         linear-gradient(
             rgba(80,35,100,0.42),
@@ -682,7 +639,6 @@ img {
 }
 
 .letter-box {
-
     max-width: 760px;
 
     margin: 0 auto 30px;
@@ -712,7 +668,6 @@ img {
 }
 
 .letter-box h3 {
-
     margin-bottom: 22px;
 
     text-align: center;
@@ -721,7 +676,6 @@ img {
 }
 
 .letter-box p {
-
     margin-bottom: 17px;
 
     font-size: 16px;
@@ -736,7 +690,6 @@ img {
 ===================================================== */
 
 #musicRoom {
-
     background:
         linear-gradient(
             rgba(45,20,80,0.40),
@@ -747,7 +700,6 @@ img {
 }
 
 .music-player {
-
     width: min(850px, 100%);
 
     margin: 0 auto 30px;
@@ -779,7 +731,6 @@ img {
 }
 
 .music-player > img {
-
     width: 100%;
     height: 250px;
 
@@ -787,7 +738,6 @@ img {
 }
 
 .music-info {
-
     padding: 35px 28px;
 
     display: flex;
@@ -799,13 +749,11 @@ img {
 }
 
 .music-info h3 {
-
     font-size: 27px;
     margin-bottom: 12px;
 }
 
 .music-info p {
-
     margin-bottom: 22px;
 
     color: rgba(255,255,255,0.85);
@@ -820,7 +768,6 @@ img {
 ===================================================== */
 
 #surpriseRoom {
-
     background:
         linear-gradient(
             rgba(60,20,90,0.38),
@@ -831,7 +778,6 @@ img {
 }
 
 .surprise-box {
-
     max-width: 700px;
 
     margin: 0 auto 30px;
@@ -859,7 +805,6 @@ img {
 }
 
 .gift {
-
     font-size: 90px;
 
     display: inline-block;
@@ -874,7 +819,6 @@ img {
 }
 
 .gift:hover {
-
     transform:
         translateY(-6px)
         scale(1.08);
@@ -884,26 +828,22 @@ img {
 }
 
 .gift.opened {
-
     transform:
         rotate(-4deg)
         scale(1.08);
 }
 
 .surprise-box h3 {
-
     font-size: 27px;
 
     margin-bottom: 10px;
 }
 
 .surprise-box > p {
-
     color: rgba(255,255,255,0.85);
 }
 
 .rainbow-line {
-
     width: min(330px, 80%);
 
     height: 4px;
@@ -927,7 +867,6 @@ img {
 }
 
 .surprise-message {
-
     padding-top: 5px;
 
     animation: messageAppear 0.7s ease forwards;
@@ -948,14 +887,12 @@ img {
 }
 
 .surprise-message h4 {
-
     margin-bottom: 18px;
 
     font-size: 25px;
 }
 
 .surprise-message p {
-
     margin-bottom: 14px;
 
     line-height: 1.7;
@@ -995,8 +932,6 @@ img {
         background-attachment: scroll;
     }
 
-    /* WELCOME */
-
     #welcomeScreen {
         background-position: center center;
     }
@@ -1015,7 +950,6 @@ img {
     }
 
     .welcome-content h1 {
-
         font-size: clamp(43px, 14vw, 70px);
 
         line-height: 0.91;
@@ -1030,7 +964,6 @@ img {
     }
 
     .welcome-content p {
-
         max-width: 300px;
 
         margin:
@@ -1043,7 +976,6 @@ img {
 
     .magic-button,
     .leave-button {
-
         max-width: 90vw;
 
         padding:
@@ -1055,7 +987,6 @@ img {
     /* DREAMLAND */
 
     #mainWorld {
-
         padding:
             48px 14px 35px;
 
@@ -1063,28 +994,22 @@ img {
     }
 
     .world-title {
-
         margin-bottom: 28px;
     }
 
     .world-title h2 {
-
         font-size: 34px;
-
         line-height: 1.1;
     }
 
     .world-title p {
-
         font-size: 13px;
-
         line-height: 1.5;
     }
 
     /* CARDS */
 
     .gateway-grid {
-
         grid-template-columns: 1fr;
 
         gap: 18px;
@@ -1093,7 +1018,6 @@ img {
     }
 
     .gateway-card {
-
         width: 100%;
 
         max-width: 92%;
@@ -1107,7 +1031,6 @@ img {
     }
 
     .gateway-card > img {
-
         width: 82%;
 
         height: 175px;
@@ -1118,18 +1041,15 @@ img {
     }
 
     .gateway-content {
-
         padding:
             17px 16px 20px;
     }
 
     .gateway-content h3 {
-
         font-size: 21px;
     }
 
     .gateway-content p {
-
         min-height: auto;
 
         margin-bottom: 15px;
@@ -1138,16 +1058,13 @@ img {
     }
 
     .dreamland-back {
-
         width: 100%;
-
         max-width: 280px;
     }
 
     /* INNER PAGES */
 
     .inner-page {
-
         min-height: 100svh;
 
         padding:
@@ -1157,14 +1074,12 @@ img {
     }
 
     .inner-content {
-
         width: 100%;
 
         padding: 15px 5px;
     }
 
     .inner-title h2 {
-
         margin-bottom: 22px;
 
         font-size: 31px;
@@ -1172,10 +1087,11 @@ img {
         line-height: 1.15;
     }
 
-    /* FRIENDSHIP */
+    /* =================================================
+       FRIENDSHIP - MOBILE
+    ================================================= */
 
     #friendshipGarden .photo-grid {
-
         grid-template-columns:
             repeat(2, minmax(0, 1fr));
 
@@ -1185,39 +1101,35 @@ img {
     }
 
     #friendshipGarden .photo-card {
-
         width: 100%;
+        min-width: 0;
+        max-width: none;
 
-        max-width: 100%;
+        height: 230px;
 
-        padding: 5px;
+        padding: 6px;
 
-        border-radius: 22px;
+        border-radius: 24px;
     }
 
     #friendshipGarden .photo-card::before {
-
-        border-radius: 22px;
+        border-radius: 26px;
     }
 
     #friendshipGarden .photo-card::after {
+        inset: 5px;
 
-        inset: 4px;
-
-        border-radius: 18px;
+        border-radius: 20px;
     }
 
     #friendshipGarden .photo-card img {
-
         width: 100%;
+        height: 100%;
 
-        height: 190px;
-
-        border-radius: 18px;
+        border-radius: 19px;
     }
 
     #friendshipGarden .photo-name {
-
         font-size: 17px;
 
         letter-spacing: 1px;
@@ -1229,21 +1141,18 @@ img {
     /* LETTER */
 
     .letter-box {
-
         padding: 23px 18px;
 
         border-radius: 22px;
     }
 
     .letter-box h3 {
-
         font-size: 22px;
 
         margin-bottom: 18px;
     }
 
     .letter-box p {
-
         font-size: 14px;
 
         line-height: 1.9;
@@ -1254,14 +1163,12 @@ img {
     /* MUSIC */
 
     .music-player {
-
         grid-template-columns: 1fr;
 
         border-radius: 24px;
     }
 
     .music-player > img {
-
         height: auto;
 
         aspect-ratio: 1 / 1;
@@ -1270,17 +1177,14 @@ img {
     }
 
     .music-info {
-
         padding: 25px 18px 28px;
     }
 
     .music-info h3 {
-
         font-size: 23px;
     }
 
     .music-info p {
-
         font-size: 14px;
 
         line-height: 1.5;
@@ -1289,7 +1193,6 @@ img {
     /* SURPRISE */
 
     .surprise-box {
-
         padding:
             30px 17px;
 
@@ -1297,24 +1200,20 @@ img {
     }
 
     .gift {
-
         font-size: 75px;
     }
 
     .surprise-box h3 {
-
         font-size: 23px;
     }
 
     .surprise-message p {
-
         font-size: 14px;
 
         line-height: 1.65;
     }
 
     .back-button {
-
         width: 100%;
 
         max-width: 280px;
