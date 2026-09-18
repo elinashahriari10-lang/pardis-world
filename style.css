@@ -512,7 +512,7 @@ center top / 100% auto fixed no-repeat;
 }
 
 .photo-card {
-    max-width: 320px;
+    max-width: 250px;
     margin: 0 auto;
 }
 .photo-card {
@@ -534,7 +534,7 @@ center top / 100% auto fixed no-repeat;
 
 .photo-card img {
     width: 100%;
-    height: 300px;
+    height: 235px;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
@@ -681,7 +681,7 @@ center top / 100% auto fixed no-repeat;
 .music-player > img {
 
     width: 100%;
-    height: 310px;
+    height: 250px;
 
     object-fit: cover;
 }
