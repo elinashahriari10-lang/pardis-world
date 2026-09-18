@@ -3,7 +3,6 @@
    Premium Magical Fantasy Website
 ===================================================== */
 
-
 /* ---------- RESET ---------- */
 
 * {
@@ -35,13 +34,11 @@ img {
     display: block;
 }
 
-
 /* ---------- HIDDEN ---------- */
 
 .hidden {
     display: none !important;
 }
-
 
 /* =====================================================
    WELCOME SCREEN
@@ -153,7 +150,6 @@ img {
         0 0 24px rgba(170, 60, 255, 0.40);
 }
 
-
 /* =====================================================
    BUTTONS
 ===================================================== */
@@ -219,7 +215,6 @@ img {
     background: rgba(40,15,65,0.20);
 }
 
-
 /* =====================================================
    DREAMLAND
 ===================================================== */
@@ -278,7 +273,6 @@ center top / 100% auto fixed no-repeat;
     font-size: clamp(13px, 2vw, 17px);
     opacity: 0.9;
 }
-
 
 /* =====================================================
    GATEWAY CARDS
@@ -342,7 +336,6 @@ center top / 100% auto fixed no-repeat;
         0 0 30px rgba(220,130,255,0.18),
         inset 0 0 35px rgba(255,255,255,0.08);
 }
-
 
 /* magical image frame */
 
@@ -423,7 +416,6 @@ center top / 100% auto fixed no-repeat;
     color: rgba(255,255,255,0.88);
 }
 
-
 /* ---------- DREAMLAND BACK ---------- */
 
 .dreamland-back {
@@ -434,7 +426,6 @@ center top / 100% auto fixed no-repeat;
 
     background: rgba(50,20,80,0.24);
 }
-
 
 /* =====================================================
    INNER PAGES
@@ -471,7 +462,7 @@ center top / 100% auto fixed no-repeat;
 
 .inner-title h2 {
 
-    margin-bottom: 30px;
+    margin-bott om: 30px;
 
     font-size: clamp(30px, 6vw, 55px);
 
@@ -482,7 +473,6 @@ center top / 100% auto fixed no-repeat;
         0 0 22px rgba(190,80,255,0.7),
         0 0 40px rgba(180,70,255,0.35);
 }
-
 
 /* =====================================================
    FRIENDSHIP
@@ -515,6 +505,7 @@ center top / 100% auto fixed no-repeat;
     max-width: 250px;
     margin: 0 auto;
 }
+
 .photo-card {
 
     overflow: hidden;
@@ -534,7 +525,7 @@ center top / 100% auto fixed no-repeat;
 
 .photo-card img {
     width: 100%;
-    height: 150px;
+    height: 235px;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
@@ -560,10 +551,10 @@ center top / 100% auto fixed no-repeat;
         0 0 15px rgba(220,130,255,0.7);
 
 }
+
 .photo-card:hover img {
     transform: scale(1.035);
 }
-
 
 /* =====================================================
    LETTER
@@ -629,7 +620,6 @@ center top / 100% auto fixed no-repeat;
 
     color: rgba(255,255,255,0.94);
 }
-
 
 /* =====================================================
    MUSIC
@@ -714,7 +704,6 @@ center top / 100% auto fixed no-repeat;
 .music-button {
     min-width: 130px;
 }
-
 
 /* =====================================================
    SURPRISE
@@ -864,7 +853,6 @@ center top / 100% auto fixed no-repeat;
     color: rgba(255,255,255,0.92);
 }
 
-
 /* =====================================================
    TABLET
 ===================================================== */
@@ -877,7 +865,6 @@ center top / 100% auto fixed no-repeat;
     }
 
 }
-
 
 /* =====================================================
    PHONE
@@ -955,7 +942,6 @@ center top / 100% auto fixed no-repeat;
         font-size: 13px;
     }
 
-
     /* DREAMLAND */
 
     #mainWorld {
@@ -985,7 +971,6 @@ center top / 100% auto fixed no-repeat;
         line-height: 1.5;
     }
 
-
     /* CARDS */
 
     .gateway-grid {
@@ -999,17 +984,16 @@ center top / 100% auto fixed no-repeat;
 
     .gateway-card {
 
-    width: 100%;
+        width: 100%;
 
-    max-width: 92%;
+        max-width: 92%;
 
-    min-height: auto;
+        min-height: auto;
 
-    margin-left: auto;
-    margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
 
-    border-radius: 25px;
-}
+        border-radius: 25px;
     }
 
     .gateway-card > img {
@@ -1050,7 +1034,6 @@ center top / 100% auto fixed no-repeat;
         max-width: 280px;
     }
 
-
     /* INNER PAGES */
 
     .inner-page {
@@ -1079,54 +1062,55 @@ center top / 100% auto fixed no-repeat;
         line-height: 1.15;
     }
 
-
     /* FRIENDSHIP */
 
     .photo-grid {
 
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    gap: 14px;
+        gap: 14px;
 
-    margin-bottom: 22px;
-}
-.photo-card {
+        margin-bottom: 22px;
+    }
 
-    width: 100%;
+    .photo-card {
 
-    overflow: hidden;
+        width: 100%;
 
-    border-radius: 22px;
+        overflow: hidden;
 
-    border: 1px solid rgba(255,255,255,0.35);
+        border-radius: 22px;
 
-    background: rgba(255,255,255,0.12);
+        border: 1px solid rgba(255,255,255,0.35);
 
-    backdrop-filter: blur(10px);
+        background: rgba(255,255,255,0.12);
 
-    box-shadow:
-        0 12px 30px rgba(40,10,60,0.25);
+        backdrop-filter: blur(10px);
 
-}
-.photo-card img {
+        box-shadow:
+            0 12px 30px rgba(40,10,60,0.25);
+    }
 
-    width: 100%;
-
-    height: 170px;
-
-    object-fit: cover;
-
-    display: block;
-}
     .photo-card img {
 
-    width: 100%;
-    height: 190px;
+        width: 100%;
 
-    aspect-ratio: auto;
+        height: 170px;
 
-    object-fit: cover;
-}
+        object-fit: cover;
+
+        display: block;
+    }
+
+    .photo-card img {
+
+        width: 100%;
+        height: 190px;
+
+        aspect-ratio: auto;
+
+        object-fit: cover;
+    }
 
     /* LETTER */
 
@@ -1152,7 +1136,6 @@ center top / 100% auto fixed no-repeat;
 
         margin-bottom: 14px;
     }
-
 
     /* MUSIC */
 
@@ -1189,7 +1172,6 @@ center top / 100% auto fixed no-repeat;
         line-height: 1.5;
     }
 
-
     /* SURPRISE */
 
     .surprise-box {
@@ -1225,7 +1207,6 @@ center top / 100% auto fixed no-repeat;
     }
 
 }
-
 
 /* =====================================================
    VERY SMALL PHONES
