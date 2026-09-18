@@ -1259,25 +1259,19 @@ center top / 100% auto fixed no-repeat;
 
 }
 
-/* ---------- FRIENDSHIP DESKTOP SIZE FIX ---------- */
+/* ---------- FRIENDSHIP SIZE TEST ---------- */
 
 @media (min-width: 651px) {
 
-    #friendshipGarden .photo-grid {
-        grid-template-columns: repeat(2, 250px);
-        justify-content: center;
-    }
-
     #friendshipGarden .photo-card {
-        width: 250px;
-        max-width: 250px;
+        width: 150px !important;
+        max-width: 150px !important;
     }
 
     #friendshipGarden .photo-card img {
-        width: 250px;
-        height: 235px;
-        max-width: 250px;
-        object-fit: cover;
+        width: 150px !important;
+        height: 150px !important;
+        max-width: 150px !important;
     }
 
 }
